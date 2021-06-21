@@ -42,22 +42,22 @@ function draw() {
 
 function spawncarrot(){
   if(frameCount%60==0){
- carrot=createSprite(175,0,50,50);
- carrot.addImage("c1",carrotimg);
- carrot.velocityY=10;
- carrot.scale=0.2
- carrot.y=Math.round(random(20,100))
-
-  }
+    carrot=createSprite(175,50,50,50);
+    carrot.addImage("c1",carrotimg);
+    carrot.velocityY=10;
+    carrot.scale=0.2
+    carrot.y=Math.round(random(20,100))
+    carrot.lifetime=180
+}
 }
 
 function spawntomato(){
   if(frameCount%60==0){
- tomato=createSprite(315,0,50,50);
- tomato.addImage("c1",tomatoimg);
- tomato.velocityY=15;
- tomato.scale=0.2
- tomato.y=Math.round(random(20,100))
-
-  }
+    tomato=createSprite(315,0,50,50);
+    tomato.addImage("c1",tomatoimg);
+    tomato.velocityY=10;
+    tomato.scale=0.2
+    tomato.y=Math.round(random(20,100))
+    tomato.lifetime=180
+}
 }
